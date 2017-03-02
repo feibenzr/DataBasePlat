@@ -3,7 +3,7 @@
 <generatorConfiguration>
 	<!-- 数据库驱动包位置 -->
 	<classPathEntry
-		location="D:\soft\mysql-connector-java-5.1.40\mysql-connector-java-5.1.40-bin.jar" />
+		location="mysql-connector-java-5.1.26.jar" />
 	<context id="DB2Tables" targetRuntime="MyBatis3">
 		<commentGenerator>
 			<property name="suppressAllComments" value="true" />
