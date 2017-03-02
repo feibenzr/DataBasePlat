@@ -7,6 +7,6 @@
 <title>userInfo</title>
 </head>
 <body>
-姓名： ${name}
+hello world:${name} 
 </body>
 </html>

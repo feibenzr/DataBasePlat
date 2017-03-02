@@ -17,6 +17,6 @@ public class Mytest {
 	
 	@Test
 	public void test(){
-		System.out.print(myService.getUser(3));
+		System.out.print(myService.getUser(1));
 	}
 }

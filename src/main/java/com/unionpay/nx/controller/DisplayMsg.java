@@ -3,19 +3,23 @@ package com.unionpay.nx.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.unionpay.nx.services.MyService;
 
 @Controller
-@RequestMapping("/user")
+@RequestMapping("/view")
 public class DisplayMsg {
 	@Autowired
 	private MyService myService;
 	
 	@RequestMapping("/showInfo")
-	public String showUser(){
+	public ModelAndView  showUser(){
 		String name = myService.getUser(1);
-		return name;
+		 ModelAndView modelAndView = new ModelAndView();
+		 modelAndView.setViewName( "showInfo" ); 
+	       modelAndView.addObject("name",name);  
+	       return modelAndView;  
 	}
 	
 
