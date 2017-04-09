@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,6 +8,21 @@
 <title>userInfo</title>
 </head>
 <body>
-hello world:${name} 
+
+	<table class="hovertable" width="90%" height="90%" align="center">
+		<tr>
+			<th>序号</th>
+			<th>商户名</th>
+			<th>笔数</th>
+		</tr>
+		<c:forEach items="${list}" var="p">
+			<tr onmouseover="this.style.backgroundColor='#ffff66';"
+				onmouseout="this.style.backgroundColor='#d4e3e5';">
+				<td>${p.id}</td>
+				<td>${p.name}</td>
+				<td>${p.age}</td>
+			</tr>
+		</c:forEach>
+	</table>
 </body>
 </html>
