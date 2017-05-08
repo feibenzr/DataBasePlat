@@ -27,7 +27,7 @@ public class Mytest {
 	  
 	@Autowired 
 	private EChartTest eChartTest;
-	 
+	  
 	@Test
 	public void test(){
 		logger.info("*********something useful output!!");

@@ -6,6 +6,6 @@
   </head>
   
   <body>
-        ${msg}
+        ${message}
   </body>
 </html>

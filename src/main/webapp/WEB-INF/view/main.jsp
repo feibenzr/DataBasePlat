@@ -16,7 +16,7 @@
 <head>
 
 
-<title>My JSP 'index.jsp' starting page</title>
+<title>银联宁夏-数据服务</title>
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
@@ -36,15 +36,13 @@
 </head>
 <body>
 	<div id="logo">
-		<a href="/"> <img src="<%=basePath%>images/logo.png"> <span>中国银联宁夏分公司-数据服务系统</span>
+		<a> <img src="<%=basePath%>images/logo.png"> <span>中国银联宁夏分公司-数据服务系统</span>
 		</a>
 	</div>
 
-	<div id="container" style="top: 100px" style="bottom:500px">
-
 		<style>
 #toc {
-	line-height: 1.5em;
+	line-height: 2.5em;
 	padding-left: 0;
 }
 
@@ -61,6 +59,7 @@
 
 #toc li a {
 	display: block;
+	font-size: 1.5em;
 	text-align: center;
 	padding: .5em;
 	color: #fff;
@@ -103,7 +102,7 @@
 }
 
 #Footer {
-	height: 350px;
+	height: 90%;
 	background: #F8F8FF;
 	margin-top: 5px;
 }
@@ -112,49 +111,15 @@
 			src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js"></script>
 		<div id="div1">
 			<ul id="toc">
-				<ul>
 					<li><a href="index1">年度指标</a></li>
-					<li><a href="showInfo">二维码交易</a></li>
-					<li><a href="showInfo">手机NFC交易</a</li>
-					<li><a href="showInfo">钱包商户</a</li>
-					<li><a href="showInfo">二维码商户</a></li>
+					<li><a href="erweima">二维码交易</a></li>
+					<li><a href="showInfo">手机NFC交易</a></li>
+					<li><a href="showInfo">钱包商户</a></li>
+					<li><a href="uploadfile1">数据上传</a></li>
 					<li><a href="message">重要通知</a></li>
-				</ul>
 			</ul>
 		</div>
-	</div>
-
-
-	<!-- CSS goes in the document HEAD or added to your external stylesheet -->
-	<style type="text/css">
-table.hovertable {
-	font-family: verdana, arial, sans-serif;
-	font-size: 11px;
-	color: #333333;
-	border-width: 1px;
-	border-color: #999999;
-	border-collapse: collapse;
-}
-
-table.hovertable th {
-	background-color: #c3dde0;
-	border-width: 1px;
-	padding: 8px;
-	border-style: solid;
-	border-color: #a9c6c9;
-}
-
-table.hovertable tr {
-	background-color: #d4e3e5;
-}
-
-table.hovertable td {
-	border-width: 1px;
-	padding: 8px;
-	border-style: solid;
-	border-color: #a9c6c9;
-}
-</style>
+	
 	<div id="Footer" align="center">
 		<!-- Table goes in the document BODY -->
 			<marquee onmouseout=this.start() onmouseover=this.stop()

@@ -7,7 +7,7 @@
 <title>IndexInfo</title>
 </head>
 <body>
-			<table class="hovertable" width="90%" height="90%" align="center">
+			<table class="hovertable" width="80%" height="50%" align="center" style="font-size:25px;" >
 			<tr>
 				<th>指标项目</th>
 				<th>预期指标数</th>
