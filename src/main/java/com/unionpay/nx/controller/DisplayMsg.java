@@ -145,7 +145,7 @@ public class DisplayMsg {
 			for (Erweima erweima : erweimaList) {
 				// 这里可以做添加数据库的功能
 				System.out.println("第一个值：" + erweima.getPartner() + "\t第二个值：" + erweima.getMerchant() + "\t第三个值："
-						+ erweima.getSum());
+						+ erweima.getSum() + "\t第四个值：" + erweima.getNowTime());
 			}
 			Msg = "批量导入EXCEL成功！";
 			request.getSession().setAttribute("msg", Msg);

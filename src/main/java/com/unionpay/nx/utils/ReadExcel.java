@@ -157,23 +157,24 @@ public class ReadExcel {
            erweima = new Erweima();
            
            //循环Excel的列
-           for(int c = 0; c <this.totalCells; c++){    
+           for(int c = 0; c <=this.totalCells; c++){    
                Cell cell = row.getCell(c);
                if (null != cell){
                    if(c==0){//第一列不读
                    }else if(c==1){
                        erweima.setId((int)(cell.getNumericCellValue()));//
                    }else if(c==2){
-                	   erweima.setPartner(cell.getStringCellValue());//客户简称
+                	   erweima.setPartner(cell.getStringCellValue());//拓展机构
                    }else if(c==3){
-                	   erweima.setMerchant(cell.getStringCellValue());//行业
+                	   erweima.setMerchant(cell.getStringCellValue());//商户名称
                    }else if(c==4){
-                	   erweima.setSum(cell.getStringCellValue());//客户来源
+                	   erweima.setSum(cell.getStringCellValue());//交易笔数
                    }else if(c==5){
-                	   SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd ");  
+                	   SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");  
                 	    Date date = null;
 						try {
-							date = sdf.parse(cell.getStringCellValue());
+							String time1 = cell.getStringCellValue();
+							date = sdf.parse(time1);
 						} catch (ParseException e) {
 							// TODO Auto-generated catch block
 							e.printStackTrace();

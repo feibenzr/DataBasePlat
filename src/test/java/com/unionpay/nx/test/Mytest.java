@@ -1,5 +1,8 @@
 package com.unionpay.nx.test;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import org.apache.log4j.Logger;
@@ -47,5 +50,14 @@ public class Mytest {
 		logger.info("*********test EChart");
 		Option option = eChartTest.test();
 		System.out.println(option);
+	}
+	@Test
+	public void testUpload() throws ParseException{
+		logger.info("*********test Upload");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd ");  
+	    String date = null;
+		String time1 = "2017-01-01";
+		date = sdf.format(time1);
+		System.out.println("*************"+date);
 	}
 }
